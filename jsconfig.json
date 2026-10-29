@@ -1,0 +1,14 @@
+{
+  "include": [
+    "./node_modules/cypress",
+    "cypress/**/*.js"
+  ],
+  "compilerOptions": {
+    "ignoreDeprecations": "6.0",
+    "baseUrl": ".",
+    "paths": {
+      "@pages/*": ["cypress/support/pages/*"],
+      "@utils/*": ["cypress/support/utils/*"],
+    }
+  }
+}

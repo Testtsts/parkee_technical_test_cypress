@@ -1,0 +1,23 @@
+{
+  "name": "cypress-qa-assessment",
+  "version": "1.0.0",
+  "private": true,
+  "description": "cypress-qa-assessment",
+  "scripts": {
+    "test": "npm run test:ui",
+    "test:ui": "cypress run --spec 'cypress/e2e/ui/**/*.cy.js'",
+    "test:api": "cypress run --spec 'cypress/e2e/api/**/*.cy.js'",
+    "test:defects": "cypress run --spec 'cypress/e2e/defects/**/*.cy.js'",
+    "test:all": "cypress run --browser=chrome",
+    "cy:open": "cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^16.2.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "@cypress/webpack-preprocessor": "^8.0.0"
+  }
+}
